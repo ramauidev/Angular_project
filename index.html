@@ -9,15 +9,24 @@
         <script src="vendor/angular.min.js"></script>
     </head>
     <body>
-      <div class="container">
-          <div ng-include="'/app/navigation/navigation.tpl.html'"
+      <div class="container" ng-controller="mainCtrl">
+          <div ng-include="navUrl"
           >           </div>
+          
+          <div ng-include="contentUrl"></div>
       </div> 
       <script src="app/cart/cart.js"></script>
       <script src="app/login/login.js"></script>
+      <!--navigation-->
       <script src="app/navigation/navigation.js"></script>
+      <script src="app/navigation/navCtrl.js"></script>
+      <!--register-->
       <script src="app/register/register.js"></script>
+      <script src="app/register/registerCtrl.js"></script>
+      <!--end of register-->
       <script src="app/sales/sales.js"></script>
       <script src="app/app.js"></script>
+      <script src="app/main/mainCtrl.js"></script>
+      
     </body>
 </html>
