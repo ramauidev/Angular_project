@@ -4,5 +4,6 @@ angular.module('eKart',[
                         "eKart.login",
                         "eKart.register",
                         "eKart.navigation",
-                        "eKart.cart"
+                        "eKart.cart",
+                        "eKart.common"
                         ]);
